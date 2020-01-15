@@ -2,6 +2,8 @@
 
 JavaScript form validation with form common checks and also structures against dangerous JS potential injections. It also counts with JS modules implementation and custom exception classes to handle errors.
 
+So... can you break the code? If you can, let me know ;)
+
 ## Locations: 
 
 You can find the files in WebContent directory.
