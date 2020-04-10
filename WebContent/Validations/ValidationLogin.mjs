@@ -26,12 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
 			 .set(pass, wrongPassNode);
 
 	// Main function on submit
-	loginForm.onsubmit = function() {
+	loginForm.onsubmit = function(e) {
+		
+		e.preventDefault();
 		
 		try {
 			
 			inputsMap.forEach(validateInputs);
-			return validation;
+
+			if (!validation) {
+				return false;
+			} else {
+				this.submit();
+			}
 			
 		} catch (err) {
 			
@@ -64,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 												  value);
 				
 			}
+
 
 		} catch(validationFormException) {
 			

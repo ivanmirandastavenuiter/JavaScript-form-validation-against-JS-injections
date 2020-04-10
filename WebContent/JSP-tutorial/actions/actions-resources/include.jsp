@@ -1,0 +1,1 @@
+<p>This is a paragraph inside the file selected with include.</p>

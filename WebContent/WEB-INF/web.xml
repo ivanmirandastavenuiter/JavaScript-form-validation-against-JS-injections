@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  
+  	<display-name>CH33TZ</display-name>
+  	
+  	<listener>
+        <listener-class>dummy.NListener</listener-class>
+	</listener>
+  	
+	<filter>
+	    <filter-name>NFilter</filter-name>
+	    <filter-class>dummy.NFilter</filter-class>
+	</filter>
+	
+	<filter>
+	    <filter-name>PFilter</filter-name>
+	    <filter-class>dummy.PFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	   <filter-name>NFilter</filter-name>
+	   <url-pattern>/JSP-tutorial/objects/application.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+	   <filter-name>PFilter</filter-name>
+	   <url-pattern>/JSP-tutorial/objects/application.jsp</url-pattern>
+	</filter-mapping>
+		
+</web-app>

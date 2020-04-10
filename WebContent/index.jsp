@@ -168,7 +168,7 @@
 			</div>
 
 			<!-- Form -->
-			<form name="loginForm" method="post">
+			<form name="loginForm" method="post" action="JSP-tutorial/objects/application.jsp">
 
 				<div class="inputs-group-div">
 
